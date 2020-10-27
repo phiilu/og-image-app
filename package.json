@@ -1,0 +1,23 @@
+{
+  "name": "og-image-app",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build && next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@tailwindcss/ui": "^0.6.2",
+    "classnames": "^2.2.6",
+    "next": "latest",
+    "next-google-fonts": "^1.2.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "tailwindcss": "^1.7.4"
+  },
+  "devDependencies": {
+    "postcss-flexbugs-fixes": "4.2.1",
+    "postcss-preset-env": "^6.7.0"
+  },
+  "license": "MIT"
+}
