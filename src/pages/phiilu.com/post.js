@@ -37,9 +37,9 @@ const PhiiluCom = () => {
         style={{ width: 1200, height: 630 }}
       >
         <div className="max-w-screen-lg space-y-2">
-          <p className="text-3xl font-semibold text-gray-600 font-source-sans-pro">
+          {date && readTime && <p className="text-3xl font-semibold text-gray-600 font-source-sans-pro">
             <span>{date}</span> — <span>{readTime}</span>
-          </p>
+          </p>}
           <h1
             className={`${getFontSize(
               title.length
