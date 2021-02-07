@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useRouter } from "next/router";
 import GoogleFonts from "next-google-fonts";
 
