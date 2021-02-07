@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
@@ -10,11 +12,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontSize: {
-        '7xl': '5rem',
-        '8xl': '6rem',
-        '9xl': '7rem',
-      },
       fontFamily: {
         'open-sans': 'Open Sans, sans-serif',
         'source-sans-pro': 'Source Sans pro, sans-serif'
@@ -23,6 +20,8 @@ module.exports = {
         14: '3rem'
       },
       colors: {
+        amber: colors.amber,
+        fuchsia: colors.fuchsia,
         prose: '#374151',
         time: '#6B7280',
         openvpn: {
@@ -190,9 +189,11 @@ module.exports = {
           800: '#048db3',
           900: '#03627c'
         }
-      }
+      },
     }
   },
-  variants: {},
-  plugins: [require('@tailwindcss/ui')]
+  variants: {
+    extend: {}
+  },
+  plugins: [require('@tailwindcss/typography')]
 };
