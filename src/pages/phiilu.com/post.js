@@ -2,12 +2,8 @@ import { useRouter } from "next/router";
 import GoogleFonts from "next-google-fonts";
 
 function getFontSize(length) {
-  if (length > 55) {
-    return `text-7xl`;
-  }
-
   if (length > 32) {
-    return `text-5xl`;
+    return `text-7xl`;
   }
 
   return `text-9xl`;
